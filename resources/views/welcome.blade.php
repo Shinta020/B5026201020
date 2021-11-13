@@ -81,17 +81,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Shinta Amalia<br>
+                    5026201020
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="shinta.5026201020.html">Tugas 1</a>
+                    <a href="shintaamalia_css.html">Tugas 2</a>
+                    <a href="jumbotron_group_shinta.html">Tugas 3</a>
+                    <a href="praktikum1">Praktikum 1</a>
+                    <a href="tugas4">Tugas 4</a>
+                    <a href="praktikum2">Praktikum 2</a>
+                    <a href="ets">ETS</a>
+                    <a href="showcalculator">Tugas PHP</a>
                 </div>
             </div>
         </div>

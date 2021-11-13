@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('praktikum1', function () {
+    return view('prak1web');
+});
+
+Route::get('tugas4', function () {
+    return view('task4web');
+});
+
+Route::get('praktikum2', 'ViewController@showPraktikum2');
+
+Route::get('ets', 'ViewController@showETS');
+
+Route::get('showcalculator', 'ViewController@showCalForm');
+
+Route::post('result', 'ViewController@showResultPHP');
