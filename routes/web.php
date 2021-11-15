@@ -30,3 +30,15 @@ Route::get('ets', 'ViewController@showETS');
 Route::get('showcalculator', 'ViewController@showCalForm');
 
 Route::post('result', 'ViewController@showResultPHP');
+
+Route::get('/pegawai', 'PegawaiController@index');
+
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+
+Route::post('/pegawai/store','PegawaiController@store');
+
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+
+Route::post('/pegawai/update','PegawaiController@update');
+
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');

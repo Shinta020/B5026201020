@@ -61,7 +61,7 @@
 				$hasil = 2*3.14*$bil1*$bil2;
 			break;
 			case 'luas permukaan tabung':
-				$hasil = 2*3.14*$bil1*$bil2*2*3.14*$bil1*$bil1;
+				$hasil = 2*3.14*$bil1*($bil1+$bil2);
 			break;
 			case 'volume tabung':
 				$hasil = 3.14*$bil1*$bil1*$bil2;
