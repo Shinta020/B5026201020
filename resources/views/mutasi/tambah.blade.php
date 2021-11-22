@@ -25,7 +25,7 @@
 </head>
 <body>
  <div class="container">
-	<h3 class="text-center">Tambah Data Pegawai</h3>
+	<h3 class="text-center">Tambah Pegawai Baru</h3>
     <br/>
 
 	<a href="/mutasi" class="btn btn-warning"> Kembali</a>
