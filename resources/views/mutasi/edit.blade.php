@@ -63,11 +63,7 @@
         <div class="button text-center row mt-3">
             <input type="submit" value="Simpan Data">
         </div>
-        <!--IDPegawai <input type="number" name="IDPegawai" required="required" value="{{ $m->IDPegawai }}"> <br/>
-		Departemen <input type="text" name="Departemen" required="required" value="{{ $m->Departemen }}"> <br/>
-		SubDepartemen <input type="text" name="SubDepartemen" required="required" value="{{ $m->SubDepartemen }}"> <br/>
-		MulaiBertugas <input type="datetime" name="MulaiBertugas" required="required" value="{{ $m->MulaiBertugas }}"> <br/>
-		<input type="submit" value="Simpan Data">-->
+
 
 	</form>
 	@endforeach
