@@ -42,3 +42,17 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+Route::get('/mutasi','MutasiController@index');
+
+Route::get('/mutasi/tambah','MutasiController@tambah');
+
+Route::post('/mutasi/store','MutasiController@store');
+
+Route::get('/mutasi/edit/{ID}','MutasiController@edit');
+
+Route::post('/mutasi/update','MutasiController@update');
+
+Route::get('/mutasi/hapus/{ID}','MutasiController@hapus');
+
+
