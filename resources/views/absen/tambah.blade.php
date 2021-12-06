@@ -9,7 +9,7 @@
     <br/>
 	<a href="/absen" class=""> Kembali</a>
 	<br/>
-	<form action="/absen/store" method="post" class="table table-success">
+	<form action="/absen/store" method="post" class="rounded">
 		{{ csrf_field() }}
         <div class=" mt-5 ">
             <div class="col-4"> Pegawai : </div>
@@ -23,21 +23,15 @@
         <br>
 
         <div class="mt-5 form-group">
-            <label for="dtpickerdemo" class="control-label"></label>
+            <label for="datetimepicker" class="control-label"></label>
                 <div class="col-4"> Tanggal :</div>
-                <div class="col-sm-8 input-group date" id="dtpickerdemo">
-                    <input type="text" class="form-control">
+                <div class="col-sm-8 input-group date" id="datetimepicker">
+                    <input type='text' required="required" class="form-control" name="Tanggal" />
                         <div class="input-group-addon input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-calendar"></i></span>
                         </div>
                 </div>
         </div>
-
-            <script type="text/javascript">
-                $(function () {
-                    $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
-                });
-            </script>
             <br>
         <div class="mt-3">
         <div class="col-sm-4"> Status : </div>

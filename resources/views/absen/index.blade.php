@@ -7,7 +7,7 @@
 <div>
     <div class="container">
 	<h3 class="text-center mt-3">Data Pegawai</h3>
-
+        <br>
 	<a href="/absen/tambah" class="btn btn-primary" > + Tambah Absen Pegawai Baru</a>
 
 	<br/>

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.js') }}">
+    <link rel="stylesheet" href="{{ asset('js/bootstrap-datetimepicker.min.js') }}">
 
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/font-awesome/css/font-awesome.min.css') }}">
@@ -41,11 +41,24 @@
     .font {
         font-size: medium;
     }
+    .formea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        background: rgb(144, 179, 130);
+        padding: 15px;
+        margin: 10px auto;
+        min-height: 80vh;
+        color: white;
+    }
+
 </style>
 
 </head>
 
-<body>
+<body >
+    <div class="container">
     <!-- Menu Bar -->
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
@@ -78,14 +91,13 @@
                 </ul>
 
             </div>
-            </div>
         </nav>
     </aside>
 <div id="right-panel" class="right-panel">
 
     <!-- Header -->
-<header id="header" class="header mb-4">
-    <div class="header-menu">
+<header id="header" class="header mb-4 ">
+    <div class="header-menu ">
         <div class="row">
             <div class="col-1 ml-3 mt-1">
                 <img class="rounded-circle" src="/ceria/fotoNew.jpg" alt="Logo"></a>
@@ -107,13 +119,13 @@
     <!-- Footer -->
 <div>
 <footer class="footer">
-    <div class="font mt-6 text-center" >
+    <div class="font mt-6 text-center" style="background-color: rgba(0, 0, 0, 0.05);" >
         Hak Cipta Oleh:
         <a>Shinta Amalia - 5026201020</a>
     </div>
 </footer>
 </div>
-
+</div>
     <script src="{{ asset('style/sufee-mastervendors/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('style/sufee-mastervendors/popper.js/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('style/sufee-mastervendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -123,7 +135,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-    <script src="bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
     <script>
         $(function () {
             $.extend(true, $.fn.datetimepicker.defaults, {
@@ -143,7 +157,7 @@
         </script>
         <script type="text/javascript">
             $(function () {
-                $('#datetimepicker').datetimepicker();
+                $('#datetimepicker').datetimepicker({format : "YYYY/MM/DD hh:mm", "defaultDate":new Date() });
             });
         </script>
 </body>
