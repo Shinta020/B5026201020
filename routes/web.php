@@ -55,4 +55,27 @@ Route::post('/mutasi/update','MutasiController@update');
 
 Route::get('/mutasi/hapus/{ID}','MutasiController@hapus');
 
+Route::get('/absen','AbsenController@index');
+Route::get('/absen/tambah','AbsenController@tambah');
+Route::post('/absen/store','AbsenController@store');
+Route::get('/absen/edit/{id}','AbsenController@edit');
+Route::post('/absen/update','AbsenController@update');
+Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+Route::get('home', function () {
+    return view('layout.ceria');
+});
+
+Route::get('home', function () {
+    return view('absen.index');
+});
+
+Route::get('home', function () {
+    return view('mutasi.index');
+});
+
+Route::get('home', function () {
+    return view('pegawai.index');
+});
+
 

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+@section('title', 'Dashboard')
+
+@section('content')
+
+<div class="container">
 	<h3>Data Pegawai</h3>
 
 	<a href="/pegawai"> Kembali</a>
@@ -13,14 +12,35 @@
 	<br/>
 	<br/>
 
-	<form action="/pegawai/store" method="post">
+	<form action="/pegawai/store" method="post" class="table table-success">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
+        <div class="">
+            <div class="col-4"> Nama </div>
+            <div class="col-8">
+                <input type="text" name="nama" required="required">
+            </div>
+        </div><br/>
+        <div class="mt-5">
+            <div class="col-4"> Jabatan </div>
+            <div class="col-8">
+                <input type="text" name="jabatan" required="required">
+            </div>
+        </div><br/>
+        <div class="mt-5">
+            <div class="col-4"> Umur </div>
+            <div class="col-8">
+                <input type="number" name="umur" required="required">
+            </div>
+        </div><br/>
+        <div class="mt-5">
+            <div class="col-4"> Alamat </div>
+            <div class="col-8">
+                <textarea name="alamat" required="required"></textarea> <br/>
+            </div>
+        </div><br/>
+		<div class="col-12 text-center">
+		    <input type="submit" value="Simpan Data">
+        </div>
 	</form>
-
-</body>
-</html>
+</div>
+@endsection
