@@ -1,18 +1,21 @@
 @extends('layout.ceria')
 
-@section('title', 'Dashboard')
+@section('title', 'Data Pegawai')
 
 @section('content')
 
 <div class="container">
 	<h3 class="text-center">Data Pegawai</h3>
-
 	<a href="/pegawai/tambah" class="btn btn-secondary"> + Tambah Pegawai Baru</a>
-
 	<br/>
-	<br/>
-
-	<table border="1" class="table table-primary">
+	<div class="container" align="center">
+        <p>Cari Data Pegawai Berdasarkan Nama :</p>
+	    <form action="/pegawai/cari" method="GET">
+            <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
+            <input class="form-control btn-success" type="submit" value="CARI">
+	    </form>
+    </div>
+	<table border="1" class="table table-primary mt-3">
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>
@@ -36,6 +39,9 @@
 		</tr>
 		@endforeach
 	</table>
+
+    {{ $pegawai->links() }}
+
 </div>
 
 @endsection

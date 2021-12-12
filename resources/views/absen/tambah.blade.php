@@ -1,6 +1,6 @@
 @extends('layout.ceria')
 
-@section('title', 'Dashboard')
+@section('title', 'Data Absen')
 
 @section('content')
 
@@ -26,7 +26,7 @@
             <label for="datetimepicker" class="control-label"></label>
                 <div class="col-4"> Tanggal :</div>
                 <div class="col-sm-8 input-group date" id="datetimepicker">
-                    <input type='text' required="required" class="form-control" name="Tanggal" />
+                    <input type='text' class="form-control" name="tanggal" />
                         <div class="input-group-addon input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-calendar"></i></span>
                         </div>

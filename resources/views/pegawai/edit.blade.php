@@ -1,6 +1,6 @@
 @extends('layout.ceria')
 
-@section('title', 'Dashboard')
+@section('title', 'Data Pegawai')
 
 @section('content')
 

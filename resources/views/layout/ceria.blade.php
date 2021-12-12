@@ -12,34 +12,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>@yield('title') PWEB</title>
+
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('js/bootstrap-datetimepicker.min.js') }}">
-
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/themify-icons/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/flag-icon-css/css/flag-icon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/vendors/selectFX/css/cs-skin-elastic.css') }}">
     <link rel="stylesheet" href="{{ asset('style/sufee-master/assets/css/style.css') }}">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
 <style>
     .header-menu {
-        background: url('/ceria/hj.jpg');
+        background: rgb(26, 26, 26);
     }
     .jarak {
-        height: 600px;
+        height: 900px;
     }
     .font {
-        font-size: medium;
+        font-size: small;
     }
     .formea {
         display: flex;
@@ -52,80 +50,80 @@
         min-height: 80vh;
         color: white;
     }
-
 </style>
 
 </head>
 
 <body >
-    <div class="container">
-    <!-- Menu Bar -->
-    <aside id="left-panel" class="left-panel">
-        <nav class="navbar navbar-expand-sm navbar-default">
+<div class="container">
+        <!-- Menu Bar -->
+        <aside id="left-panel" class="left-panel">
+            <nav class="navbar navbar-expand-sm navbar-default">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" >My Task</a>
+                    <a class="navbar-brand hidden">M</a>
+                </div>
 
-            <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" >My Task</a>
-                <a class="navbar-brand hidden">M</a>
-            </div>
+                <div id="main-menu" class="main-menu collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/pegawai"> <i class="menu-icon fa fa-dashboard"></i>Tugas Pegawai</a>
+                        </li>
+                        <li>
+                            <a href="/mutasi"> <i class="menu-icon fa fa-dashboard"></i>Tugas Mutasi</a>
+                        </li>
+                        <li>
+                            <a href="/absen"> <i class="menu-icon fa fa-dashboard"></i>Tugas Absen </a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="menu-icon fa fa-dashboard"></i>Tugas Minggu Depan </a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="menu-icon fa fa-dashboard"></i>Praktikum</a>
+                        </li>
+                    </ul>
 
-            <div id="main-menu" class="main-menu collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/pegawai"> <i class="menu-icon fa fa-dashboard"></i>Tugas Pegawai</a>
-                    </li>
-                    <li>
-                        <a href="/mutasi"> <i class="menu-icon fa fa-dashboard"></i>Tugas Mutasi</a>
-                    </li>
-                    <li>
-                        <a href="/absen"> <i class="menu-icon fa fa-dashboard"></i>Tugas Absen </a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="menu-icon fa fa-dashboard"></i>Tugas Minggu Depan </a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="menu-icon fa fa-dashboard"></i>Praktikum</a>
-                    </li>
-                </ul>
+                </div>
+            </nav>
+        </aside>
 
-            </div>
-        </nav>
-    </aside>
-<div id="right-panel" class="right-panel">
+        <div id="right-panel" class="right-panel">
 
-    <!-- Header -->
-<header id="header" class="header mb-4 ">
-    <div class="header-menu ">
-        <div class="row">
-            <div class="col-1 ml-3 mt-1">
-                <img class="rounded-circle" src="/ceria/fotoNew.jpg" alt="Logo"></a>
-            </div>
-            <div class="col-10 mt-3">
-                <h5 class="m-b-10 text-white">Shinta Amalia | 5026201020</h5>
-                <p class="m-b-0 ">Institut Teknologi Sepuluh Nopember</p>
-            </div>
+        <!-- Header -->
+        <header id="header" class="header mb-4 ">
+            <div class="header-menu ">
+                <div class="row">
+                    <div class="col-1 ml-3 mt-3">
+                        <img class="rounded-circle" src="/ceria/fotoNew.jpg" alt="Logo"></a>
+                    </div>
+                    <div class="col-10 mt-3">
+                        <h5 class="m-b-10 text-white">Shinta Amalia | 5026201020</h5>
+                        <p class="m-b-0 ">Institut Teknologi Sepuluh Nopember</p>
+                    </div>
+                </div>
+            </div><hr>
+        </header>
+
+        <!-- Content -->
+        <div class="jarak">
+            @section("content")
+            @show
         </div>
-    </div><hr>
-</header>
-<div class="jarak">
 
-  @section("content")
-  @show
-
-</div>
-
-    <!-- Footer -->
-<div>
-<footer class="footer">
-    <div class="font mt-6 text-center" style="background-color: rgba(0, 0, 0, 0.05);" >
-        Hak Cipta Oleh:
-        <a>Shinta Amalia - 5026201020</a>
+        <!-- Footer -->
+        <div>
+            <footer class="footer">
+                <div class="font mt-6 text-center" style="background-color: rgba(0, 0, 0, 0.05);" >
+                    Hak Cipta Oleh: <a>Shinta Amalia - 5026201020</a>
+                </div>
+            </footer>
+        </div>
     </div>
-</footer>
 </div>
-</div>
+
     <script src="{{ asset('style/sufee-mastervendors/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('style/sufee-mastervendors/popper.js/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('style/sufee-mastervendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -154,11 +152,11 @@
                 }
             });
         });
-        </script>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker').datetimepicker({format : "YYYY/MM/DD hh:mm", "defaultDate":new Date() });
-            });
-        </script>
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker').datetimepicker({format : "YYYY/MM/DD hh:mm", "defaultDate":new Date() });
+        });
+    </script>
 </body>
 </html>
