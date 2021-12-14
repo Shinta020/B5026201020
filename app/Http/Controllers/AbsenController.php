@@ -85,6 +85,7 @@ class AbsenController extends Controller
 
     		// mengambil data dari table pegawai sesuai pencarian data
 		$absen = DB::table('absen')
+        ->join('pegawai', 'absen.ID', '=', 'pegawai.pegawai_id')
 		->where('pegawai_nama','like',"%".$cari."%")
         //->orWhere('pegawai_alamat','like',"%".$cari."%")
 		->paginate();
@@ -94,4 +95,3 @@ class AbsenController extends Controller
 
 	}
 }
-

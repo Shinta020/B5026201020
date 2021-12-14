@@ -70,19 +70,16 @@
                 <div id="main-menu" class="main-menu collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/pegawai"> <i class="menu-icon fa fa-dashboard"></i>Tugas Pegawai</a>
+                            <a href="/pegawai"> <i class="menu-icon fa fa-dashboard"></i>Pegawai</a>
                         </li>
                         <li>
-                            <a href="/mutasi"> <i class="menu-icon fa fa-dashboard"></i>Tugas Mutasi</a>
+                            <a href="/mutasi"> <i class="menu-icon fa fa-dashboard"></i>Mutasi</a>
                         </li>
                         <li>
-                            <a href="/absen"> <i class="menu-icon fa fa-dashboard"></i>Tugas Absen </a>
+                            <a href="/absen"> <i class="menu-icon fa fa-dashboard"></i>Absen </a>
                         </li>
                         <li>
-                            <a href=""> <i class="menu-icon fa fa-dashboard"></i>Tugas Minggu Depan </a>
-                        </li>
-                        <li>
-                            <a href=""> <i class="menu-icon fa fa-dashboard"></i>Praktikum</a>
+                            <a href="/mobil"> <i class="menu-icon fa fa-dashboard"></i>Mobil</a>
                         </li>
                     </ul>
 

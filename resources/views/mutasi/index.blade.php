@@ -18,7 +18,7 @@
 	<table class="table table-info mt-3">
 		<tr>
             <th>ID</th>
-			<th>IDPegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Departemen</th>
 			<th>SubDepartemen</th>
 			<th>MulaiBertugas</th>
@@ -27,7 +27,7 @@
 		@foreach($mutasi as $m)
 		<tr>
             <td>{{ $m->ID }}</td>
-			<td>{{ $m->IDPegawai }}</td>
+			<td>{{ $m->pegawai_nama }}</td>
 			<td>{{ $m->Departemen }}</td>
 			<td>{{ $m->SubDepartemen }}</td>
 			<td>{{ $m->MulaiBertugas }}</td>

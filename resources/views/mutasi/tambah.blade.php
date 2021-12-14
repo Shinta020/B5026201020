@@ -14,10 +14,14 @@
 
 	<form action="/mutasi/store" method="post" class="table table-success">
 		{{ csrf_field() }}
-        <div class="row mt-3">
+       <div class="row mt-3">
             <div class="col-4">IDPegawai</div>
             <div class="col-8">
-                <input type="number" name="IDPegawai" required="required"> <br/>
+                <select name="IDPegawai">
+                    @foreach($pegawai as $p)
+                        <option value="{{ $p -> pegawai_id }}">{{ $p -> pegawai_nama }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
         <div class="row mt-3">

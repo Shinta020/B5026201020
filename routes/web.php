@@ -34,6 +34,7 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
 
 //mutasi
 Route::get('/mutasi','MutasiController@index');
@@ -51,6 +52,7 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/cari','AbsenController@cari');
 
 Route::get('home', function () {
     return view('layout.ceria');
@@ -68,4 +70,16 @@ Route::get('home', function () {
     return view('pegawai.index');
 });
 
+Route::get('home', function () {
+    return view('mobil.index');
+});
 
+//Mobil
+Route::get('/mobil','MobilController@index');
+Route::get('/mobil/tambah','MobilController@tambah');
+Route::post('/mobil/store','MobilController@store');
+Route::get('/mobil/edit/{id}','MobilController@edit');
+Route::post('/mobil/update','MobilController@update');
+Route::get('/mobil/hapus/{id}','MobilController@hapus');
+Route::get('/mobil/cari','MobilController@cari');
+Route::get('/mobil/detail/{id}','MobilController@view');

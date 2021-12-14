@@ -7,7 +7,7 @@
 <div class="container">
 
     <h3 class="text-center">Edit Data Pegawai</h3><br/>
-	<a href="/absen" class=""> Kembali</a><br/>
+	<a href="/absen" class="btn btn-secondary"> Kembali</a><br/>
 
     @foreach($absen as $p)
         <form action="/absen/update" method="post" class="">
