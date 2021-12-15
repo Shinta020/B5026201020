@@ -17,7 +17,7 @@
         <div class="">
             <div class="col-4"> NIP </div>
             <div class="col-8">
-                <input type="text" name="NIP" required="required">
+                <input type="number" name="NIP" required="required">
             </div>
         </div><br/>
         <div class="mt-5">
@@ -35,7 +35,7 @@
         <div class="mt-5">
             <div class="col-4"> Gaji </div>
             <div class="col-8">
-                <input type="text" name="Gaji" required="required"> <br/>
+                <input type="number" name="Gaji" required="required"> <br/>
             </div>
         </div><br/>
 		<div class="col-12 text-center">
