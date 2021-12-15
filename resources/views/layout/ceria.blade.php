@@ -81,6 +81,9 @@
                         <li>
                             <a href="/mobil"> <i class="menu-icon fa fa-dashboard"></i>Mobil</a>
                         </li>
+                        <li>
+                            <a href="/karyawan1"> <i class="menu-icon fa fa-dashboard"></i>Karyawan1</a>
+                        </li>
                     </ul>
 
                 </div>

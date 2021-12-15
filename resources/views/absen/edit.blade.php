@@ -35,7 +35,7 @@
             </div>
             <script type="text/javascript">
                 $(function () {
-                    $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
+                    $('#datetimepicker').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
                 });
             </script>
             <br>

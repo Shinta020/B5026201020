@@ -83,3 +83,9 @@ Route::post('/mobil/update','MobilController@update');
 Route::get('/mobil/hapus/{id}','MobilController@hapus');
 Route::get('/mobil/cari','MobilController@cari');
 Route::get('/mobil/detail/{id}','MobilController@view');
+
+//karyawan1
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/tambah','Karyawan1Controller@tambah');
+Route::post('/karyawan1/store','Karyawan1Controller@store');
+Route::get('/karyawan1/hapus/{id}','Karyawan1Controller@hapus');
